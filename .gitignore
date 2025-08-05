@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
 # C extensions
@@ -46,7 +46,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py.cover
+*.py,cover
 .hypothesis/
 .pytest_cache/
 cover/
@@ -205,3 +205,34 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project specific
+# Dataset and model files
+FGVC-Aircraft/
+FGVC-Aircraft-subset/
+fgvc-aircraft-2013b.tar.gz
+models/*.pth
+models/*.pt
+models/*.ckpt
+
+# Gradio temporary files
+gradio_cached_examples/
+flagged/
+
+# Plots and outputs
+plots/
+outputs/
+results/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
